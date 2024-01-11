@@ -1,0 +1,73 @@
+.programs {
+    margin: 80px auto;
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-between;
+    gap: 20px;
+  }
+  
+  .program {
+    flex-basis: 31%;
+    position: relative;
+    border-radius: 10px; 
+    overflow: hidden; 
+    cursor: pointer; 
+    transition: transform 0.3s ease; 
+  }
+  
+  .program:hover {
+    transform: scale(1.05); 
+  }
+  
+  .program img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; 
+    display: block;
+    transition: opacity 0.3s ease; 
+  }
+  
+  .caption {
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 15, 152, 0.3); 
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    opacity: 0;
+    pointer-events: none; 
+    transition: opacity 0.3s ease; 
+  }
+  
+  .program:hover .caption {
+    opacity: 1; 
+  }
+  
+  .caption img {
+    width: 60px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; 
+  }
+  
+  .caption p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 5px;
+    transition: color 0.3s ease; 
+  }
+  
+  .program:hover .caption p {
+    color: #0047ab; 
+  }
+  
+  .program:hover .caption img {
+    transform: scale(1.2); 
+  }
+  
