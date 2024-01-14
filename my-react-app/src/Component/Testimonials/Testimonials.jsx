@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import './Testimonials.css';
+import "./Testimonials.css"; // ✅ Correct
+
 import user_1 from '../../assets/user-1.png';
 import user_2 from '../../assets/user-2.png';
 import user_3 from '../../assets/user-3.png';
